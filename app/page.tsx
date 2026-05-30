@@ -38,16 +38,17 @@ export default function Home()
         </p>
 
         <div className="flex gap-4">
-          <button className="bg-white text-black px-6 py-3 rounded-lg font-medium">
-            CATALOG PAKAN & GROOMING
-          </button>
+          <Link
+        href="/katalog"
+        className="bg-white border text-black border-black px-6 py-3 rounded-lg">
+        KATALOG MAKANAN
+          </Link>
 
-        <Link
-  href="/pesan"
-  className="border border-white px-6 py-3 rounded-lg"
->
-  BOOKING GROOMING
-</Link>
+          <Link
+        href="/pesan"
+        className="border border-white px-6 py-3 rounded-lg">
+        BOOKING GROOMING
+          </Link>
         </div>
       </section>
     </main>
