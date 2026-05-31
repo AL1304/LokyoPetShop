@@ -9,5 +9,5 @@ export default function Navbar() {
         <a href="/blog">Blog</a>
       </div>
     </nav>
-  )
+  );
 }
