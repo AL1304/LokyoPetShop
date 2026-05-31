@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 export default function Home() 
 {
   return (
@@ -23,15 +24,33 @@ export default function Home()
 
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center h-[80vh] px-6">
-        <p className="text-gray-400 mb-4">
-          PET SHOP • GROOMING PET
-        </p>
+        <div className="flex items-center gap-4">
+  
 
-        <h1 className="text-6xl md:text-7xl font-bold mb-6">
-          LOKYO
-          <br />
-          PET SHOP
-        </h1>
+  <h1 className="text-6xl md:text-7xl font-bold mb-6">
+  <div className="flex items-baseline justify-center">
+    LOKYO
+    <Image
+      src="/pawbg.png"
+      alt="paw"
+      width={80}
+      height={80}
+      className="ml-0 translate-y-4"
+    />
+  </div>
+  <div className="flex items-baseline justify-center">
+    PET
+    <Image
+      src="/pawbg kebalik.png"
+      alt="paw"
+      width={80}
+      height={80}
+      className="ml-2 translate-y-6"
+    />
+    SHOP
+  </div>
+</h1>
+</div>
 
         <p className="max-w-2xl text-gray-400 text-lg mb-8">
           Menyediakan segala pakan & grooming untuk kebutuhan kucing Anda dengan kualitas terbaik dan harga terjangkau.
